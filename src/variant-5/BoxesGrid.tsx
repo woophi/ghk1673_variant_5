@@ -33,6 +33,9 @@ export const BoxesGrid = ({ showThx }: { showThx: () => void }) => {
               key={item.title}
               img={item.imgS}
               logo={item.logo}
+              category={item.category}
+              subcategory={item.subcategory}
+              title={item.title}
             />
           ) : (
             <LongBox
@@ -43,9 +46,9 @@ export const BoxesGrid = ({ showThx }: { showThx: () => void }) => {
                     : selectedNames.concat(item.title),
                 )
               }
-              category={item.category}
               checked={selectedNames.includes(item.title)}
               percentage={item.percentage}
+              category={item.category}
               subcategory={item.subcategory}
               title={item.title}
               key={item.title}
